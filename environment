@@ -1,0 +1,8 @@
+#
+# This file is parsed by pam_env module
+#
+# Syntax: simple "KEY=VAL" pairs on separate lines
+#
+VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/radeon_icd.x86_64.json:/usr/share/vulkan/icd.d/radeon_icd.i686.json
+AMD_VULKAN_ICD=RADV
+DISABLE_LAYER_AMD_SWITCHABLE_GRAPHICS_1=1
