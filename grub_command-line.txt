@@ -1,0 +1,1 @@
+ clearcpuid=514 acpi_enforce_resources=lax radeon.cik_support=0 amdgpu.cik_support=1 amdgpu.ppfeaturemask=0xffffffff
