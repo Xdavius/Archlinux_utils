@@ -6,5 +6,9 @@ Target = grub
 [Action]
 Description = Executing grub-install...
 When = PostTransaction
-Exec = /usr/bin/grub-install --target=x86_64-efi --efi-directory=/boot/efi
+Exec = /usr/bin/grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=ARCHLINUX
 
+[Action]
+Description = Executing grub-mkconfig ...
+When = PostTransaction
+Exec = /bin/sh -c "grub-mkconfig -o /boot/grub/grub.cfg"
